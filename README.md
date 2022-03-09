@@ -83,3 +83,6 @@ feenord Infra repository
 
 bastion_IP = 62.84.115.145
 someinternalhost_IP = bastion
+  
+testapp_IP = 178.154.240.243
+testapp_port = 19531
