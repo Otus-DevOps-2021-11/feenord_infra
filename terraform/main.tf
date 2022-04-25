@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    yandex = "~> 0.70.0"
+    yandex = "~> 0.35.0"
   }
 }
 provider "yandex" {
