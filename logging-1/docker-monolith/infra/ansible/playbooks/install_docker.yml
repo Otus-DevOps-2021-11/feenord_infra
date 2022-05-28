@@ -1,0 +1,8 @@
+---
+- name: Docker install
+  hosts: app
+  # hosts: 178.154.204.88
+  become: true
+  tasks:
+    - name: Install docker via bash script
+      shell: ../files/install_docker.sh

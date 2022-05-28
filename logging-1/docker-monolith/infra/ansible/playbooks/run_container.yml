@@ -1,0 +1,12 @@
+---
+- name: Docker install
+  hosts: app
+  become: true
+  vars:
+    host_ip: ansible_default_ipv4.address
+  tasks:
+    - name: Build reddit-app docker image
+      shell:  docker build -t reddit:latest ../../../
+
+    - name: Run reddit-app docker image
+      shell:  docker run --name reddit -d --network={{ host_ip }} reddit:latest
